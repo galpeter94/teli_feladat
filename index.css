@@ -8,7 +8,7 @@ body{
 .fejlec {
     height: 20vh;
     background-image: url(/kepek/fejlec.jpg);
-    color: antiquewhite;
+    color: whitesmoke;
     grid-area: fejlec;
 }
 
@@ -26,7 +26,7 @@ body{
     grid-area: leiras;
     max-width: 400px;
     text-align: justify;
-    align-items: right;
+    margin: auto;
 }
 
 .gombok{
@@ -45,16 +45,17 @@ body{
 
 .fejlec h1 {
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 2.2rem;
     text-align: center;
     position: relative;
-    top: 70px;
+    top: 40px;
     text-shadow: 1px 1px 2px black;
 }
 
 .footer {
     background-color:dodgerblue;
     padding: 10px;
+    margin-top: 10px;
     text-align: center;
     grid-area: fo;
 }
