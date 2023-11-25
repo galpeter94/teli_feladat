@@ -1,0 +1,76 @@
+body{
+    max-width: 800px;
+    justify-content: center;
+    margin: auto;
+    background-image: url(kepek/hatter.jpg);
+    object-fit:contain;
+}
+
+
+.fejlec {
+    height: 20vh;
+    background-image: url(/kepek/fejlec.jpg);
+    color: antiquewhite;
+    grid-area: fejlec;
+}
+
+.kepek {
+    grid-area: kep;
+}
+
+.menu {
+    grid-area: me;
+}
+
+.leirasok {
+    grid-area: leiras;
+}
+
+.gombok{
+    background-color:dodgerblue;
+    display: flex;
+    color: azure;
+    justify-content: center;
+    width: 125px;
+    text-align: center;
+    padding: 8px 12px;
+    border-radius: 10px;
+    font-size: 15px;
+    text-decoration: none;
+    margin: 5px;
+}
+
+.fejlec h1 {
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+    position: relative;
+    top: 70px;
+    text-shadow: 1px 1px 2px black;
+}
+
+.footer {
+    background-color:dodgerblue;
+    padding: 10px;
+    text-align: center;
+    grid-area: fo;
+}
+
+.grid {
+    height: 100vh;
+    width: 800px;
+    display: grid;
+    background-color: azure;
+    grid-template-areas: 
+    'fejlec fejlec fejlec'
+    'fejlec fejlec fejlec'
+    'fejlec fejlec fejlec'
+    'me kep leiras'
+    'me kep leiras'
+    'me kep leiras'
+    'me kep leiras'
+    'me kep leiras'
+    'fo fo fo'
+    'fo fo fo';
+
+}
