@@ -54,11 +54,31 @@ body{
 
 .footer {
     background-color:dodgerblue;
-    padding: 10px;
-    margin-top: 10px;
+    padding: 5px;
+    margin-top: 5px;
     text-align: center;
     grid-area: fo;
 }
+
+div.polaroid {
+    width: 214px;
+    height: 144px;
+    padding: 10px 10px 20px 10px;
+    border: 1px solid #BFBFBF;
+    background-color: white;
+    box-shadow: 10px 10px 5px #aaaaaa;
+  }
+  
+  div.rotate_right {
+    float: left;
+    transform: rotate(7deg);
+  }
+  
+  div.rotate_left {
+    float: left;
+    transform: rotate(-8deg);
+  }
+
 
 .grid {
     height: 100vh;
