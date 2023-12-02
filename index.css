@@ -5,10 +5,11 @@ body{
 }
 
 table{
-    width: 100%;
+    align-self: start;
+    margin: 20px;
     width: 400px;
     border-collapse: collapse;
-    margin-block: 1rem;
+    grid-area: t;
 }
 
 .fejlec {
@@ -20,6 +21,9 @@ table{
 
 .menu {
     grid-area: me;
+    align-self: start;
+    width: 200px;
+    margin-right: 10px;
 }
 
 .tabla{
@@ -31,7 +35,7 @@ table{
     display: flex;
     color: azure;
     justify-content: center;
-    width: 200px;
+    width: 190px;
     text-align: center;
     padding: 8px 12px;
     border-radius: 10px;
@@ -43,8 +47,20 @@ table{
 .ady{
     grid-area: a;
     width: 400px;
-    align-items: center;
+    height: 100%;
+    align-items: start;
     text-align: justify;
+    border: 1px solid black;
+    margin: 10px;
+}
+
+tr:nth-child(even) { 
+    background-color: lightblue; 
+} 
+
+tr {
+    border-bottom: 1px solid darkslategrey;
+    height: 32px;
 }
 
 .fejlec h1 {
@@ -75,14 +91,14 @@ h1{
     align-items: center;
     background-color: azure;
     grid-template-areas: 
-    'f f f f'
-    'f f f f'
-    'f f f f'
-    'me t t a'
-    'me t t a'
-    'me t t a'
-    'me t t a'
-    'fo fo fo fo'
-    'fo fo fo fo';
+    'f f f '
+    'f f f'
+    'f f f'
+    'me t a'
+    'me t a'
+    'me t a'
+    'me t a'
+    'fo fo fo'
+    'fo fo fo';
 
 }
