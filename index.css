@@ -1,9 +1,15 @@
 body{
     max-width: 1000px;
     margin: auto;
-    background-image: url();
+    background-image: url(kepek/hatter.jpg); 
 }
 
+table{
+    width: 100%;
+    width: 400px;
+    border-collapse: collapse;
+    margin-block: 1rem;
+}
 
 .fejlec {
     height: 20vh;
@@ -14,7 +20,10 @@ body{
 
 .menu {
     grid-area: me;
-    max-width: 200px;
+}
+
+.tabla{
+    width: 400px;
 }
 
 .gombok{
@@ -22,7 +31,7 @@ body{
     display: flex;
     color: azure;
     justify-content: center;
-    width: 100%;
+    width: 200px;
     text-align: center;
     padding: 8px 12px;
     border-radius: 10px;
@@ -33,6 +42,9 @@ body{
 
 .ady{
     grid-area: a;
+    width: 400px;
+    align-items: center;
+    text-align: justify;
 }
 
 .fejlec h1 {
@@ -52,6 +64,10 @@ body{
     grid-area: fo;
 }
 
+h1{
+    font-size: medium;
+}
+
 .grid {
     height: 100vh;
     width: 1000px;
@@ -59,14 +75,14 @@ body{
     align-items: center;
     background-color: azure;
     grid-template-areas: 
-    'f f f'
-    'f f f'
-    'f f f'
-    'me t a'
-    'me t a'
-    'me t a'
-    'me t  a'
-    'fo fo fo'
-    'fo fo fo';
+    'f f f f'
+    'f f f f'
+    'f f f f'
+    'me t t a'
+    'me t t a'
+    'me t t a'
+    'me t t a'
+    'fo fo fo fo'
+    'fo fo fo fo';
 
 }
