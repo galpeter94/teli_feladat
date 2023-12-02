@@ -1,0 +1,72 @@
+body{
+    max-width: 1000px;
+    margin: auto;
+    background-image: url();
+}
+
+
+.fejlec {
+    height: 20vh;
+    background-image: url(/kepek/fejlec.jpg);
+    color: whitesmoke;
+    grid-area: f;
+}
+
+.menu {
+    grid-area: me;
+    max-width: 200px;
+}
+
+.gombok{
+    background-color:dodgerblue;
+    display: flex;
+    color: azure;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    padding: 8px 12px;
+    border-radius: 10px;
+    font-size: 15px;
+    text-decoration: none;
+    margin: 5px;
+}
+
+.ady{
+    grid-area: a;
+}
+
+.fejlec h1 {
+    font-weight: bold;
+    font-size: 2.2rem;
+    text-align: center;
+    position: relative;
+    top: 40px;
+    text-shadow: 1px 1px 2px black;
+}
+
+.footer {
+    background-color:dodgerblue;
+    padding: 5px;
+    margin-top: 5px;
+    text-align: center;
+    grid-area: fo;
+}
+
+.grid {
+    height: 100vh;
+    width: 1000px;
+    display: grid;
+    align-items: center;
+    background-color: azure;
+    grid-template-areas: 
+    'f f f'
+    'f f f'
+    'f f f'
+    'me t a'
+    'me t a'
+    'me t a'
+    'me t  a'
+    'fo fo fo'
+    'fo fo fo';
+
+}
