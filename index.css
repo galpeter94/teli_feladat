@@ -12,14 +12,18 @@ body{
     grid-area: fejlec;
 }
 
-.kepek {
-    grid-area: kep;
-    max-width: 400px;
-}
-
 .menu {
     grid-area: me;
     max-width: 200px;
+}
+
+.kepek {
+    padding-block: 35px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4 1fr);
+    grid-area: kep;
+    width: 400px;
 }
 
 .leirasok {
@@ -61,40 +65,48 @@ body{
 }
 
 div.polaroid {
-    width: 214px;
-    height: 144px;
+    width: 180px;
     padding: 10px 10px 20px 10px;
     border: 1px solid #BFBFBF;
     background-color: white;
     box-shadow: 10px 10px 5px #aaaaaa;
   }
   
-  div.rotate_right {
+.rotate_right {
     float: left;
     transform: rotate(7deg);
   }
   
-  div.rotate_left {
+.rotate_left {
     float: left;
     transform: rotate(-8deg);
-  }
+}
 
+
+.felso_kepek {
+    padding-bottom: 35px;
+}
+
+.also_kepek {
+    padding-top: 35px;
+}
 
 .grid {
     height: 100vh;
     width: 1000px;
     display: grid;
+    align-items: center;
     background-color: azure;
     grid-template-areas: 
-    'fejlec fejlec fejlec'
-    'fejlec fejlec fejlec'
-    'fejlec fejlec fejlec'
-    'me kep leiras'
-    'me kep leiras'
-    'me kep leiras'
-    'me kep leiras'
-    'me kep leiras'
-    'fo fo fo'
-    'fo fo fo';
+    'fejlec fejlec fejlec fejlec'
+    'fejlec fejlec fejlec fejlec'
+    'fejlec fejlec fejlec fejlec'
+    'me kep kep leiras'
+    'me kep kep leiras'
+    'me kep kep leiras'
+    'me kep kep leiras'
+    'me kep kep leiras'
+    'fo fo fo fo'
+    'fo fo fo fo';
 
 }
